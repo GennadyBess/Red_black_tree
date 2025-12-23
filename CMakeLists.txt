@@ -36,7 +36,6 @@ if(MSVC)
     target_compile_options(main PRIVATE /W4 /utf-8)
     target_compile_options(test_tree PRIVATE /W4 /utf-8)
 endif()
-# После if(MSVC) добавьте:
 if(MINGW)
     target_compile_options(main PRIVATE -Wall -Wextra)
     # UTF-8 вывод для Windows
