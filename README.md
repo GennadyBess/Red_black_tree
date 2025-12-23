@@ -3,7 +3,7 @@
 
 ```bash
 git clone https://github.com/GennadyBess/Red_black_tree
-cd scrum-board
+cd Red_black_tree
 
 mkdir build
 cd build
