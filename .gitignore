@@ -1,0 +1,37 @@
+# C++ Build
+build/
+*.exe
+*.o
+*.obj
+*.dll
+*.lib
+*.a
+*.pdb
+*.ilk
+*.bin
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+DartConfiguration.tcl
+*.cmake
+*.ninja
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
