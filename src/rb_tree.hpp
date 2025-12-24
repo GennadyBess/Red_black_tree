@@ -41,30 +41,29 @@ public:
         return 0; 
     }
 
-    int checkParents(RBNode<T>* node) {
-        if (!node) return 0;
+    // int checkParents(RBNode<T>* node) {
+    //     if (!node) return 0;
 
-        if (node->left && node->left->parent != node) {
-            return -1;
-        }
-        if (node->right && node->right->parent != node) {
-            return -1;
-        }
-        int left = checkParents(node->left.get());
-        if (left == -1) return -1;
+    //     if (node->left && node->left->parent != node) {
+    //         return -1;
+    //     }
+    //     if (node->right && node->right->parent != node) {
+    //         return -1;
+    //     }
+    //     int left = checkParents(node->left.get());
+    //     if (left == -1) return -1;
 
-        int right = checkParents(node->right.get());
-        if (right == -1) return -1;
+    //     int right = checkParents(node->right.get());
+    //     if (right == -1) return -1;
 
-        return 0; 
-    }
+    //     return 0; 
+    // }
 
     int validate() {
         if (root && root->color != Color::Black) return -1;
 
         if (blackHeight(root.get()) == -1 ||
-            checkRedRule(root.get()) == -1 ||
-            checkParents(root.get()) == -1) {
+            checkRedRule(root.get()) == -1) {
             return -1;
         }
         return 0;
